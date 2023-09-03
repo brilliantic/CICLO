@@ -385,6 +385,7 @@ h6 {
           flex-grow: 1;
   position: relative;
   padding-top: 9.6875rem;
+  padding-left: 2.5rem;
   padding-bottom: 9.6875rem;
 }
 
@@ -1373,8 +1374,8 @@ h6 {
   }
 
   .screen-01__container {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 0rem;
+    padding-right: 0rem;
   }
 
   .screen-01__body {
@@ -1469,7 +1470,11 @@ h6 {
 }
 
 @media (max-width: 47.99875em) and (max-width: 20em) {
-  .screen-01__image-ibg {
+  .screen-01__container {
+    margin-left: -0.9375rem;
+  }
+
+  .screen-01__container {
     margin-right: -0.9375rem;
   }
 
@@ -1954,7 +1959,11 @@ h6 {
 }
 
 @media (max-width: 47.99875em) and (min-width: 120em) {
-  .screen-01__image-ibg {
+  .screen-01__container {
+    margin-left: -15rem;
+  }
+
+  .screen-01__container {
     margin-right: -15rem;
   }
 
@@ -1984,14 +1993,26 @@ h6 {
 }
 
 @media (max-width: 47.99875em) and (min-width: 20em) and (max-width: 120em) {
+@supports (margin-left: clamp( -15rem , 1.875rem  +  -14.0625vw , -0.9375rem )) {
+    .screen-01__container {
+      margin-left: clamp( -15rem , 1.875rem  +  -14.0625vw , -0.9375rem );
+    }
+}
+
+@supports not (margin-left: clamp( -15rem , 1.875rem  +  -14.0625vw , -0.9375rem )) {
+    .screen-01__container {
+      margin-left: calc(-0.9375rem + -14.0625 * (100vw - 20rem) / 100);
+    }
+}
+
 @supports (margin-right: clamp( -15rem , 1.875rem  +  -14.0625vw , -0.9375rem )) {
-    .screen-01__image-ibg {
+    .screen-01__container {
       margin-right: clamp( -15rem , 1.875rem  +  -14.0625vw , -0.9375rem );
     }
 }
 
 @supports not (margin-right: clamp( -15rem , 1.875rem  +  -14.0625vw , -0.9375rem )) {
-    .screen-01__image-ibg {
+    .screen-01__container {
       margin-right: calc(-0.9375rem + -14.0625 * (100vw - 20rem) / 100);
     }
 }
