@@ -401,6 +401,8 @@ h6 {
 .screen-01__section-header {
   position: relative;
   z-index: 1;
+  padding-left: 3.125rem;
+  padding-right: 3.125rem;
 }
 
 .screen-01__image-ibg {
@@ -933,6 +935,14 @@ h6 {
 }
 
 @media (min-width: 47.99875em) and (min-width: 120em) {
+  .screen-01__section-header {
+    padding-left: 15rem;
+  }
+
+  .screen-01__section-header {
+    padding-right: 15rem;
+  }
+
   .screen-03__image {
     left: -15rem;
   }
@@ -1006,16 +1016,6 @@ h6 {
 @media (min-width: 61.99875em) and (min-width: 120em) {
   .screen-09__section-header .section-header__title {
     margin-right: 2rem;
-  }
-}
-
-@media (min-width: 123.75em) {
-  .screen-01__section-header {
-    padding-left: 15rem;
-  }
-
-  .screen-01__section-header {
-    padding-right: 15rem;
   }
 }
 
@@ -1218,14 +1218,6 @@ h6 {
 
   .screen-01__body {
     padding-bottom: 3.125rem;
-  }
-
-  .screen-01__section-header {
-    padding-left: 0.9375rem;
-  }
-
-  .screen-01__section-header {
-    padding-right: 0.9375rem;
   }
 
   .screen-03 .values-screen-03 {
@@ -1927,33 +1919,31 @@ h6 {
 }
 }
 
-@media (min-width: 20em) and (max-width: 123.75em) {
-@supports (padding-left: clamp( 0.9375rem , -1.7733433735rem  +  13.5542168675vw , 15rem )) {
-    .screen-01__section-header {
-      padding-left: clamp( 0.9375rem , -1.7733433735rem  +  13.5542168675vw , 15rem );
-    }
-}
-
-@supports not (padding-left: clamp( 0.9375rem , -1.7733433735rem  +  13.5542168675vw , 15rem )) {
-    .screen-01__section-header {
-      padding-left: calc(0.9375rem + 14.0625 * (100vw - 20rem) / 103.75);
-    }
-}
-
-@supports (padding-right: clamp( 0.9375rem , -1.7733433735rem  +  13.5542168675vw , 15rem )) {
-    .screen-01__section-header {
-      padding-right: clamp( 0.9375rem , -1.7733433735rem  +  13.5542168675vw , 15rem );
-    }
-}
-
-@supports not (padding-right: clamp( 0.9375rem , -1.7733433735rem  +  13.5542168675vw , 15rem )) {
-    .screen-01__section-header {
-      padding-right: calc(0.9375rem + 14.0625 * (100vw - 20rem) / 103.75);
-    }
-}
-}
-
 @media (min-width: 47.99875em) and (min-width: 20em) and (max-width: 120em) {
+@supports (padding-left: clamp( 0.9375rem , -1.875rem  +  14.0625vw , 15rem )) {
+    .screen-01__section-header {
+      padding-left: clamp( 0.9375rem , -1.875rem  +  14.0625vw , 15rem );
+    }
+}
+
+@supports not (padding-left: clamp( 0.9375rem , -1.875rem  +  14.0625vw , 15rem )) {
+    .screen-01__section-header {
+      padding-left: calc(0.9375rem + 14.0625 * (100vw - 20rem) / 100);
+    }
+}
+
+@supports (padding-right: clamp( 0.9375rem , -1.875rem  +  14.0625vw , 15rem )) {
+    .screen-01__section-header {
+      padding-right: clamp( 0.9375rem , -1.875rem  +  14.0625vw , 15rem );
+    }
+}
+
+@supports not (padding-right: clamp( 0.9375rem , -1.875rem  +  14.0625vw , 15rem )) {
+    .screen-01__section-header {
+      padding-right: calc(0.9375rem + 14.0625 * (100vw - 20rem) / 100);
+    }
+}
+
 @supports (left: clamp( -15rem , 1.875rem  +  -14.0625vw , -0.9375rem )) {
     .screen-03__image {
       left: clamp( -15rem , 1.875rem  +  -14.0625vw , -0.9375rem );
@@ -1980,6 +1970,14 @@ h6 {
 }
 
 @media (min-width: 47.99875em) and (max-width: 20em) {
+  .screen-01__section-header {
+    padding-left: 0.9375rem;
+  }
+
+  .screen-01__section-header {
+    padding-right: 0.9375rem;
+  }
+
   .screen-03__image {
     left: -0.9375rem;
   }
