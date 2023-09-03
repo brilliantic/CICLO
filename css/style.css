@@ -940,6 +940,14 @@ h6 {
   .screen-07__image {
     right: -15rem;
   }
+
+  .screen-12__container {
+    padding-left: 15rem;
+  }
+
+  .screen-12__container {
+    padding-right: 15rem;
+  }
 }
 
 @media (min-width: 61.99875em) {
@@ -1152,14 +1160,6 @@ h6 {
     padding-bottom: 9.6875rem;
   }
 
-  .screen-12__body {
-    padding-left: 15rem;
-  }
-
-  .screen-12__body {
-    padding-right: 15rem;
-  }
-
   .screen-12__value {
     font-size: 3.75rem;
   }
@@ -1296,14 +1296,6 @@ h6 {
 
   .screen-12__body {
     padding-bottom: 3.125rem;
-  }
-
-  .screen-12__body {
-    padding-left: 0.9375rem;
-  }
-
-  .screen-12__body {
-    padding-right: 0.9375rem;
   }
 
   .screen-12__value {
@@ -1482,14 +1474,6 @@ h6 {
   }
 
   .screen-09__items {
-    margin-right: -0.9375rem;
-  }
-
-  .screen-12__container {
-    margin-left: -0.9375rem;
-  }
-
-  .screen-12__container {
     margin-right: -0.9375rem;
   }
 
@@ -1902,30 +1886,6 @@ h6 {
     }
 }
 
-@supports (padding-left: clamp( 0.9375rem , -1.875rem  +  14.0625vw , 15rem )) {
-    .screen-12__body {
-      padding-left: clamp( 0.9375rem , -1.875rem  +  14.0625vw , 15rem );
-    }
-}
-
-@supports not (padding-left: clamp( 0.9375rem , -1.875rem  +  14.0625vw , 15rem )) {
-    .screen-12__body {
-      padding-left: calc(0.9375rem + 14.0625 * (100vw - 20rem) / 100);
-    }
-}
-
-@supports (padding-right: clamp( 0.9375rem , -1.875rem  +  14.0625vw , 15rem )) {
-    .screen-12__body {
-      padding-right: clamp( 0.9375rem , -1.875rem  +  14.0625vw , 15rem );
-    }
-}
-
-@supports not (padding-right: clamp( 0.9375rem , -1.875rem  +  14.0625vw , 15rem )) {
-    .screen-12__body {
-      padding-right: calc(0.9375rem + 14.0625 * (100vw - 20rem) / 100);
-    }
-}
-
 @supports (font-size: clamp( 2.1875rem , 1.875rem  +  1.5625vw , 3.75rem )) {
     .screen-12__value {
       font-size: clamp( 2.1875rem , 1.875rem  +  1.5625vw , 3.75rem );
@@ -1977,6 +1937,30 @@ h6 {
       right: calc(-0.9375rem + -14.0625 * (100vw - 20rem) / 100);
     }
 }
+
+@supports (padding-left: clamp( 0.9375rem , -1.875rem  +  14.0625vw , 15rem )) {
+    .screen-12__container {
+      padding-left: clamp( 0.9375rem , -1.875rem  +  14.0625vw , 15rem );
+    }
+}
+
+@supports not (padding-left: clamp( 0.9375rem , -1.875rem  +  14.0625vw , 15rem )) {
+    .screen-12__container {
+      padding-left: calc(0.9375rem + 14.0625 * (100vw - 20rem) / 100);
+    }
+}
+
+@supports (padding-right: clamp( 0.9375rem , -1.875rem  +  14.0625vw , 15rem )) {
+    .screen-12__container {
+      padding-right: clamp( 0.9375rem , -1.875rem  +  14.0625vw , 15rem );
+    }
+}
+
+@supports not (padding-right: clamp( 0.9375rem , -1.875rem  +  14.0625vw , 15rem )) {
+    .screen-12__container {
+      padding-right: calc(0.9375rem + 14.0625 * (100vw - 20rem) / 100);
+    }
+}
 }
 
 @media (min-width: 47.99875em) and (max-width: 20em) {
@@ -1986,6 +1970,14 @@ h6 {
 
   .screen-07__image {
     right: -0.9375rem;
+  }
+
+  .screen-12__container {
+    padding-left: 0.9375rem;
+  }
+
+  .screen-12__container {
+    padding-right: 0.9375rem;
   }
 }
 
@@ -2003,14 +1995,6 @@ h6 {
   }
 
   .screen-09__items {
-    margin-right: -15rem;
-  }
-
-  .screen-12__container {
-    margin-left: -15rem;
-  }
-
-  .screen-12__container {
     margin-right: -15rem;
   }
 
@@ -2064,30 +2048,6 @@ h6 {
 
 @supports not (margin-right: clamp( -15rem , 1.875rem  +  -14.0625vw , -0.9375rem )) {
     .screen-09__items {
-      margin-right: calc(-0.9375rem + -14.0625 * (100vw - 20rem) / 100);
-    }
-}
-
-@supports (margin-left: clamp( -15rem , 1.875rem  +  -14.0625vw , -0.9375rem )) {
-    .screen-12__container {
-      margin-left: clamp( -15rem , 1.875rem  +  -14.0625vw , -0.9375rem );
-    }
-}
-
-@supports not (margin-left: clamp( -15rem , 1.875rem  +  -14.0625vw , -0.9375rem )) {
-    .screen-12__container {
-      margin-left: calc(-0.9375rem + -14.0625 * (100vw - 20rem) / 100);
-    }
-}
-
-@supports (margin-right: clamp( -15rem , 1.875rem  +  -14.0625vw , -0.9375rem )) {
-    .screen-12__container {
-      margin-right: clamp( -15rem , 1.875rem  +  -14.0625vw , -0.9375rem );
-    }
-}
-
-@supports not (margin-right: clamp( -15rem , 1.875rem  +  -14.0625vw , -0.9375rem )) {
-    .screen-12__container {
       margin-right: calc(-0.9375rem + -14.0625 * (100vw - 20rem) / 100);
     }
 }
