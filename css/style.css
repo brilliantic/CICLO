@@ -935,14 +935,6 @@ h6 {
 }
 
 @media (min-width: 47.99875em) and (min-width: 120em) {
-  .screen-01__section-header {
-    padding-left: 15rem;
-  }
-
-  .screen-01__section-header {
-    padding-right: 15rem;
-  }
-
   .screen-03__image {
     left: -15rem;
   }
@@ -1920,30 +1912,6 @@ h6 {
 }
 
 @media (min-width: 47.99875em) and (min-width: 20em) and (max-width: 120em) {
-@supports (padding-left: clamp( 0.9375rem , -1.875rem  +  14.0625vw , 15rem )) {
-    .screen-01__section-header {
-      padding-left: clamp( 0.9375rem , -1.875rem  +  14.0625vw , 15rem );
-    }
-}
-
-@supports not (padding-left: clamp( 0.9375rem , -1.875rem  +  14.0625vw , 15rem )) {
-    .screen-01__section-header {
-      padding-left: calc(0.9375rem + 14.0625 * (100vw - 20rem) / 100);
-    }
-}
-
-@supports (padding-right: clamp( 0.9375rem , -1.875rem  +  14.0625vw , 15rem )) {
-    .screen-01__section-header {
-      padding-right: clamp( 0.9375rem , -1.875rem  +  14.0625vw , 15rem );
-    }
-}
-
-@supports not (padding-right: clamp( 0.9375rem , -1.875rem  +  14.0625vw , 15rem )) {
-    .screen-01__section-header {
-      padding-right: calc(0.9375rem + 14.0625 * (100vw - 20rem) / 100);
-    }
-}
-
 @supports (left: clamp( -15rem , 1.875rem  +  -14.0625vw , -0.9375rem )) {
     .screen-03__image {
       left: clamp( -15rem , 1.875rem  +  -14.0625vw , -0.9375rem );
@@ -1970,14 +1938,6 @@ h6 {
 }
 
 @media (min-width: 47.99875em) and (max-width: 20em) {
-  .screen-01__section-header {
-    padding-left: 0.9375rem;
-  }
-
-  .screen-01__section-header {
-    padding-right: 0.9375rem;
-  }
-
   .screen-03__image {
     left: -0.9375rem;
   }
