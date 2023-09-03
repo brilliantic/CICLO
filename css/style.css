@@ -1072,22 +1072,6 @@ h6 {
     padding-bottom: 9.6875rem;
   }
 
-  .screen-01__section-header {
-    padding-left: 15rem;
-  }
-
-  .screen-01__section-header {
-    padding-right: 15rem;
-  }
-
-  .screen-01__image {
-    padding-left: -15rem;
-  }
-
-  .screen-01__image {
-    padding-right: -15rem;
-  }
-
   .screen-03 .values-screen-03 {
     padding-top: 7.5rem;
   }
@@ -1160,22 +1144,6 @@ h6 {
     padding-bottom: 9.6875rem;
   }
 
-  .screen-12__body {
-    padding-left: 15rem;
-  }
-
-  .screen-12__body {
-    padding-right: 15rem;
-  }
-
-  .screen-12__image {
-    padding-left: -15rem;
-  }
-
-  .screen-12__image {
-    padding-right: -15rem;
-  }
-
   .screen-12__value {
     font-size: 3.75rem;
   }
@@ -1232,22 +1200,6 @@ h6 {
 
   .screen-01__body {
     padding-bottom: 3.125rem;
-  }
-
-  .screen-01__section-header {
-    padding-left: 0.9375rem;
-  }
-
-  .screen-01__section-header {
-    padding-right: 0.9375rem;
-  }
-
-  .screen-01__image {
-    padding-left: -0.9375rem;
-  }
-
-  .screen-01__image {
-    padding-right: -0.9375rem;
   }
 
   .screen-03 .values-screen-03 {
@@ -1320,22 +1272,6 @@ h6 {
 
   .screen-12__body {
     padding-bottom: 3.125rem;
-  }
-
-  .screen-12__body {
-    padding-left: 0.9375rem;
-  }
-
-  .screen-12__body {
-    padding-right: 0.9375rem;
-  }
-
-  .screen-12__image {
-    padding-left: -0.9375rem;
-  }
-
-  .screen-12__image {
-    padding-right: -0.9375rem;
   }
 
   .screen-12__value {
@@ -1421,6 +1357,8 @@ h6 {
         -ms-flex-direction: column;
             flex-direction: column;
     min-height: 100%;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .screen-05__image-ibg img {
@@ -1698,54 +1636,6 @@ h6 {
     }
 }
 
-@supports (padding-left: clamp( 0.9375rem , -1.875rem  +  14.0625vw , 15rem )) {
-    .screen-01__section-header {
-      padding-left: clamp( 0.9375rem , -1.875rem  +  14.0625vw , 15rem );
-    }
-}
-
-@supports not (padding-left: clamp( 0.9375rem , -1.875rem  +  14.0625vw , 15rem )) {
-    .screen-01__section-header {
-      padding-left: calc(0.9375rem + 14.0625 * (100vw - 20rem) / 100);
-    }
-}
-
-@supports (padding-right: clamp( 0.9375rem , -1.875rem  +  14.0625vw , 15rem )) {
-    .screen-01__section-header {
-      padding-right: clamp( 0.9375rem , -1.875rem  +  14.0625vw , 15rem );
-    }
-}
-
-@supports not (padding-right: clamp( 0.9375rem , -1.875rem  +  14.0625vw , 15rem )) {
-    .screen-01__section-header {
-      padding-right: calc(0.9375rem + 14.0625 * (100vw - 20rem) / 100);
-    }
-}
-
-@supports (padding-left: clamp( -15rem , 1.875rem  +  -14.0625vw , -0.9375rem )) {
-    .screen-01__image {
-      padding-left: clamp( -15rem , 1.875rem  +  -14.0625vw , -0.9375rem );
-    }
-}
-
-@supports not (padding-left: clamp( -15rem , 1.875rem  +  -14.0625vw , -0.9375rem )) {
-    .screen-01__image {
-      padding-left: calc(-0.9375rem + -14.0625 * (100vw - 20rem) / 100);
-    }
-}
-
-@supports (padding-right: clamp( -15rem , 1.875rem  +  -14.0625vw , -0.9375rem )) {
-    .screen-01__image {
-      padding-right: clamp( -15rem , 1.875rem  +  -14.0625vw , -0.9375rem );
-    }
-}
-
-@supports not (padding-right: clamp( -15rem , 1.875rem  +  -14.0625vw , -0.9375rem )) {
-    .screen-01__image {
-      padding-right: calc(-0.9375rem + -14.0625 * (100vw - 20rem) / 100);
-    }
-}
-
 @supports (padding-top: clamp( 2.8125rem , 1.875rem  +  4.6875vw , 7.5rem )) {
     .screen-03 .values-screen-03 {
       padding-top: clamp( 2.8125rem , 1.875rem  +  4.6875vw , 7.5rem );
@@ -1947,54 +1837,6 @@ h6 {
 @supports not (padding-bottom: clamp( 3.125rem , 1.8125rem  +  6.5625vw , 9.6875rem )) {
     .screen-12__body {
       padding-bottom: calc(3.125rem + 6.5625 * (100vw - 20rem) / 100);
-    }
-}
-
-@supports (padding-left: clamp( 0.9375rem , -1.875rem  +  14.0625vw , 15rem )) {
-    .screen-12__body {
-      padding-left: clamp( 0.9375rem , -1.875rem  +  14.0625vw , 15rem );
-    }
-}
-
-@supports not (padding-left: clamp( 0.9375rem , -1.875rem  +  14.0625vw , 15rem )) {
-    .screen-12__body {
-      padding-left: calc(0.9375rem + 14.0625 * (100vw - 20rem) / 100);
-    }
-}
-
-@supports (padding-right: clamp( 0.9375rem , -1.875rem  +  14.0625vw , 15rem )) {
-    .screen-12__body {
-      padding-right: clamp( 0.9375rem , -1.875rem  +  14.0625vw , 15rem );
-    }
-}
-
-@supports not (padding-right: clamp( 0.9375rem , -1.875rem  +  14.0625vw , 15rem )) {
-    .screen-12__body {
-      padding-right: calc(0.9375rem + 14.0625 * (100vw - 20rem) / 100);
-    }
-}
-
-@supports (padding-left: clamp( -15rem , 1.875rem  +  -14.0625vw , -0.9375rem )) {
-    .screen-12__image {
-      padding-left: clamp( -15rem , 1.875rem  +  -14.0625vw , -0.9375rem );
-    }
-}
-
-@supports not (padding-left: clamp( -15rem , 1.875rem  +  -14.0625vw , -0.9375rem )) {
-    .screen-12__image {
-      padding-left: calc(-0.9375rem + -14.0625 * (100vw - 20rem) / 100);
-    }
-}
-
-@supports (padding-right: clamp( -15rem , 1.875rem  +  -14.0625vw , -0.9375rem )) {
-    .screen-12__image {
-      padding-right: clamp( -15rem , 1.875rem  +  -14.0625vw , -0.9375rem );
-    }
-}
-
-@supports not (padding-right: clamp( -15rem , 1.875rem  +  -14.0625vw , -0.9375rem )) {
-    .screen-12__image {
-      padding-right: calc(-0.9375rem + -14.0625 * (100vw - 20rem) / 100);
     }
 }
 
